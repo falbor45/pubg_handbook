@@ -13,6 +13,7 @@ import {
   NavLink,
 } from 'reactstrap';
 import SearchPlayer from './SearchPlayer'
+import Weapons from './Weapons'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -65,6 +66,7 @@ export default class App extends React.Component {
           {
             this.state.selectedSection === 'searchPlayer' ? <SearchPlayer/> : null
           }
+          <Weapons/>
         </Container>
       </div>
     );
